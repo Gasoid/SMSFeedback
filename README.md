@@ -7,4 +7,7 @@ Python API for smsfeedback.ru
 
     from api_smsfeedback import SmsFeedBack
     client = SmsFeedBack("jika","pass123")
+    #проверяем состояние счета
     client.credits()
+    #отправка смс
+    client.send_sms("7987654321",'i love you!')
